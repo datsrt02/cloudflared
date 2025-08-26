@@ -1,0 +1,7 @@
+Một số lỗi thường gặp:
+1. Lỗi 404 Request khi cài cho Home Assistant: do thiếu trust proxy
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.33.0/24 (IP của cloudflare)
+    - 192.168.9.0/24 (IP subnet của mạng Local, bắt buộc phải có)
