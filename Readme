@@ -5,3 +5,4 @@ http:
   trusted_proxies:
     - 172.30.33.0/24 (IP của cloudflare)
     - 192.168.9.0/24 (IP subnet của mạng Local, bắt buộc phải có)
+2. Đôi khi lỗi không connect được IP: xoá tunnel cloudflared và tạo lại, sau đó chạy lại service cloudflare trên debian.
